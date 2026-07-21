@@ -1,26 +1,26 @@
 const experiences = [
   {
-    period: "2022 — Present",
-    role: "Senior Frontend Engineer",
-    company: "Tech Innovators Inc.",
+    period: "2017 — Present",
+    role: "Web Graphics Designer/SEO Specialist",
+    company: "EnfraUSA Inc.",
     description:
-      "Leading frontend architecture for a suite of fintech products. Implemented micro-frontend architecture, reduced bundle size by 40%, and mentored a team of 5 developers.",
-    technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
+      "Leading brand for a suite of medical products and website services. Implemented website upgrades to thousands of websites, reduced project timelines by 30%, and mentored a team of 3 developers.",
+    technologies: ["OctoberCMS", "PHP", "JQuery", "Twig", "Bootstrap"],
     current: true,
   },
   {
-    period: "2020 — 2022",
-    role: "Frontend Engineer",
-    company: "Digital Solutions Co.",
+    period: "2018 — Present",
+    role: "Photographer | Videographer",
+    company: "Freelance",
     description:
-      "Built and maintained multiple React applications for enterprise clients. Introduced automated testing practices that improved code coverage to 85%.",
-    technologies: ["React", "Redux", "Jest", "Cypress"],
+      "Visual storyteller capturing authentic moments through a lens. Specializing in commercial photography and dynamic videography for brands and individuals.",
+    technologies: ["Sony A7III", "Lightroom", "Premiere Pro", "After Effects", "DaVinci"],
     current: false,
   },
   {
-    period: "2019 — 2020",
+    period: "2017 — 2020",
     role: "Junior Developer",
-    company: "StartUp Labs",
+    company: "Basin Tech.",
     description:
       "Contributed to the development of a SaaS platform from MVP to production. Collaborated with designers to implement pixel-perfect UI components.",
     technologies: ["React", "Node.js", "MongoDB", "AWS"],
@@ -31,8 +31,8 @@ const experiences = [
     role: "Freelance Developer",
     company: "Self-Employed",
     description:
-      "Delivered custom web solutions for small businesses and startups. Built 15+ websites and applications, handling everything from design to deployment.",
-    technologies: ["JavaScript", "PHP", "WordPress", "MySQL"],
+      "Delivered custom web solutions for small businesses and startups. Built websites and Automation applications, handling everything from design to deployment.",
+    technologies: ["GoHighLevel", "Make", "Zapier", "Airtable", "N8N", "MySQL", "Shopify", "ReactJs", "Typescript", "Tailwind"],
     current: false,
   },
 ];

@@ -1,40 +1,41 @@
 import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
+
 const projects = [
   {
-    title: "Fintech Dashboard",
+    title: "Trude Lizares Shopify",
     description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
+      "A comprehensive shopify platform with real-time data visualization, shop and inventory management.",
     image: "/projects/project1.png",
-    tags: ["React", "Typescript", "NodeJS"],
-    link: "#",
+    tags: ["Shopify", "JQuery", "CSS"],
+    link: "https://trudelizares.com/",
     github: "#",
   },
   {
-    title: "E-Commerce Platform",
+    title: "Flagstone Recruiting Automation Make",
     description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
+      "An Ai full-featured automation development a solution with recruiting management, processing, and onboarding dashboard.",
     image: "/projects/project2.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
+    tags: ["Make", "Apify", "Airtable", "Google Sheets", "PDF.co", "Ai"],
     link: "#",
     github: "#",
   },
   {
-    title: "AI Writing Assistant",
+    title: "The Results Billboard",
     description:
-      "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
+      "Photography and Video for a leading BPO Company in Cebu.",
     image: "/projects/project3.png",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
-    link: "#",
+    tags: ["Photography", "Videography", "PremierePro", "Photoshop", "AfterEffects"],
+    link: "https://www.youtube.com/watch?v=FiJK8dShSro",
     github: "#",
   },
   {
-    title: "Project Management Tool",
+    title: "Japanese website",
     description:
-      "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
+      "A collaborative project with real-time updates, task tracking, and integrations.",
     image: "/projects/project4.png",
-    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
-    link: "#",
+    tags: ["Photography", "Videography", "PHP", "Javascript"],
+    link: "cebuvic.jp",
     github: "#",
   },
 ];
@@ -60,7 +61,7 @@ export const Projects = () => {
           </h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
             A selection of my recent work, from complex web applications to
-            innovative tools that solve real-world problems.
+            Photography and creative video.
           </p>
         </div>
 
@@ -134,10 +135,16 @@ export const Projects = () => {
 
         {/* View All CTA */}
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
-          <AnimatedBorderButton>
-            View All Projects
-            <ArrowUpRight className="w-5 h-5" />
-          </AnimatedBorderButton>
+          <a 
+            href="https://www.youtube.com/@Franclinlim-localhost/videos" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <AnimatedBorderButton>
+              View All Video Projects
+              <ArrowUpRight className="w-5 h-5" />
+            </AnimatedBorderButton>
+          </a>
         </div>
       </div>
     </section>
