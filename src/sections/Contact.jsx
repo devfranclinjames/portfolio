@@ -14,19 +14,19 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "pedro@example.com",
-    href: "mailto:pedro@example.com",
+    value: "devfranclinjames@gmail.com",
+    href: "mailto:devfranclinjames@gmail.com",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567",
+    value: "+63 (998) 383-2238",
+    href: "tel:+639983832238",
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "San Francisco, CA",
+    value: "Cebu City, Cebu, Philippines",
     href: "#",
   },
 ];
