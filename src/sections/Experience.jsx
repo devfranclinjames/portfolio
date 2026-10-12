@@ -1,39 +1,20 @@
 const experiences = [
   {
     period: "2017 — Present",
-    role: "Web Graphics Designer/SEO Specialist",
+    role: "Web Designer / Web Graphics Designer",
     company: "EnfraUSA Inc.",
     description:
-      "Leading brand for a suite of medical products and website services. Implemented website upgrades to thousands of websites, reduced project timelines by 30%, and mentored a team of 3 developers.",
-    technologies: ["OctoberCMS", "PHP", "JQuery", "Twig", "Bootstrap"],
+      "Designing and maintaining user-focused websites across medical, dental, optometry, chiropractic, and veterinary industries. Leading platform migrations (iMatrix → OctoberCMS → Webflow), delivering professional design solutions, and managing SEO and analytics for thousands of client websites.",
+    technologies: [
+      "OctoberCMS",
+      "Webflow",
+      "PHP",
+      "jQuery",
+      "Twig",
+      "SCSS",
+      "SEO",
+    ],
     current: true,
-  },
-  {
-    period: "2018 — Present",
-    role: "Photographer | Videographer",
-    company: "Freelance",
-    description:
-      "Visual storyteller capturing authentic moments through a lens. Specializing in commercial photography and dynamic videography for brands and individuals.",
-    technologies: ["Sony A7III", "Lightroom", "Premiere Pro", "After Effects", "DaVinci"],
-    current: false,
-  },
-  {
-    period: "2017 — 2020",
-    role: "Junior Developer",
-    company: "Basin Tech.",
-    description:
-      "Contributed to the development of a SaaS platform from MVP to production. Collaborated with designers to implement pixel-perfect UI components.",
-    technologies: ["React", "Node.js", "MongoDB", "AWS"],
-    current: false,
-  },
-  {
-    period: "2018 — 2019",
-    role: "Freelance Developer",
-    company: "Self-Employed",
-    description:
-      "Delivered custom web solutions for small businesses and startups. Built websites and Automation applications, handling everything from design to deployment.",
-    technologies: ["GoHighLevel", "Make", "Zapier", "Airtable", "N8N", "MySQL", "Shopify", "ReactJs", "Typescript", "Tailwind"],
-    current: false,
   },
 ];
 
@@ -70,8 +51,9 @@ export const Experience = () => {
             className="text-muted-foreground
            animate-fade-in animation-delay-200"
           >
-            A timeline of my professional growth, from curious beginner to
-            senior engineer leading teams and building products at scale.
+            A timeline of my professional growth as a Web Designer — from
+            crafting user-focused interfaces to leading large-scale website
+            migrations and design systems.
           </p>
         </div>
 

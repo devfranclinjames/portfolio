@@ -1,42 +1,54 @@
-import { ArrowUpRight, Github } from "lucide-react";
+import { ArrowUpRight, Globe } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
 const projects = [
   {
+    title: "Midtown Richmond Dentist — Before",
+    description:
+      "Original practice website with dated layout, cluttered navigation, and limited mobile responsiveness. Served as the baseline for a full design refresh and platform migration.",
+    image: "/projects/midtown-before.png",
+    tags: ["Legacy Site", "OctoberCMS", "Pre-Redesign"],
+    link: "https://midtownrichmonddentist.com/",
+  },
+  {
+    title: "Midtown Richmond Dentist — After",
+    description:
+      "Redesigned and migrated to Webflow with a modern layout, streamlined navigation, responsive breakpoints, and improved user experience for prospective patients.",
+    image: "/projects/midtown-after.png",
+    tags: ["Webflow", "UI/UX", "Responsive", "Migration"],
+    link: "https://71836-1.webflow.io/",
+  },
+  {
+    title: "Berkshire Dental Iowa — Before",
+    description:
+      "Original dental site with heavy imagery, inconsistent typography, and limited accessibility across devices. Baseline for full UI/UX and platform upgrade.",
+    image: "/projects/berkshire-before.png",
+    tags: ["Legacy Site", "OctoberCMS", "Pre-Redesign"],
+    link: "https://berkshiredentaliowa.com/",
+  },
+  {
+    title: "Berkshire Dental Iowa — After",
+    description:
+      "Rebuilt in Webflow with cleaner visual hierarchy, mobile-first layout, prominent call-to-action placement, and refined typography for a professional dental brand.",
+    image: "/projects/berkshire-after.png",
+    tags: ["Webflow", "UI/UX", "Responsive", "Migration"],
+    link: "https://104288-1.webflow.io/",
+  },
+  {
     title: "Trude Lizares Shopify",
     description:
-      "A comprehensive shopify platform with real-time data visualization, shop and inventory management.",
+      "Shopify storefront with product listings, inventory management, and a refined shopping experience tailored to the brand's fashion identity.",
     image: "/projects/project1.png",
-    tags: ["Shopify", "JQuery", "CSS"],
+    tags: ["Shopify", "jQuery", "CSS", "Front-End"],
     link: "https://trudelizares.com/",
-    github: "#",
   },
   {
-    title: "Flagstone Recruiting Automation Make",
+    title: "CebuVic Japanese Website",
     description:
-      "An Ai full-featured automation development a solution with recruiting management, processing, and onboarding dashboard.",
-    image: "/projects/project2.png",
-    tags: ["Make", "Apify", "Airtable", "Google Sheets", "PDF.co", "Ai"],
-    link: "#",
-    github: "#",
-  },
-  {
-    title: "The Results Billboard",
-    description:
-      "Photography and Video for a leading BPO Company in Cebu.",
-    image: "/projects/project3.png",
-    tags: ["Photography", "Videography", "PremierePro", "Photoshop", "AfterEffects"],
-    link: "https://www.youtube.com/watch?v=FiJK8dShSro",
-    github: "#",
-  },
-  {
-    title: "Japanese website",
-    description:
-      "A collaborative project with real-time updates, task tracking, and integrations.",
+      "Collaborative website project featuring structured content, clean layout, and custom front-end implementation for a Japanese-language audience.",
     image: "/projects/project4.png",
-    tags: ["Photography", "Videography", "PHP", "Javascript"],
-    link: "cebuvic.jp",
-    github: "#",
+    tags: ["PHP", "JavaScript", "HTML/CSS"],
+    link: "https://cebuvic.jp",
   },
 ];
 
@@ -60,8 +72,8 @@ export const Projects = () => {
             </span>
           </h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
-            A selection of my recent work, from complex web applications to
-            Photography and creative video.
+            A selection of my recent work — from full website redesigns and
+            platform migrations to responsive storefronts and custom builds.
           </p>
         </div>
 
@@ -85,19 +97,15 @@ export const Projects = () => {
                 bg-gradient-to-t from-card via-card/50
                  to-transparent opacity-60"
                 />
-                {/* Overlay Links */}
+                {/* Overlay Link */}
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a
                     href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
                   >
-                    <ArrowUpRight className="w-5 h-5" />
-                  </a>
-                  <a
-                    href={project.github}
-                    className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
-                  >
-                    <Github className="w-5 h-5" />
+                    <Globe className="w-5 h-5" />
                   </a>
                 </div>
               </div>
@@ -134,18 +142,18 @@ export const Projects = () => {
         </div>
 
         {/* View All CTA */}
-        <div className="text-center mt-12 animate-fade-in animation-delay-500">
-          <a 
-            href="https://www.youtube.com/@Franclinlim-localhost/videos" 
-            target="_blank" 
+        {/* <div className="text-center mt-12 animate-fade-in animation-delay-500">
+          <a
+            href="https://www.youtube.com/@Franclinlim-localhost/videos"
+            target="_blank"
             rel="noopener noreferrer"
           >
             <AnimatedBorderButton>
-              View All Video Projects
+              View All Projects
               <ArrowUpRight className="w-5 h-5" />
             </AnimatedBorderButton>
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

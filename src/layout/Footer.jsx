@@ -1,15 +1,28 @@
-import { Github, Linkedin, Twitter, Heart } from "lucide-react";
+import { Linkedin, Youtube, Mail } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
+  {
+    icon: Linkedin,
+    href: "https://www.linkedin.com/in/franclinjameslim/",
+    label: "LinkedIn",
+  },
+  {
+    icon: Youtube,
+    href: "https://www.youtube.com/@Franclinlim-localhost",
+    label: "YouTube",
+  },
+  {
+    icon: Mail,
+    href: "mailto:devfranclinjames@gmail.com",
+    label: "Email",
+  },
 ];
 
 const footerLinks = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
+  { href: "#testimonials", label: "Testimonials" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -25,8 +38,11 @@ export const Footer = () => {
             <a href="#" className="text-xl font-bold tracking-tight">
               FRVNC_LIM<span className="text-primary">.</span>
             </a>
+            <p className="text-xs text-muted-foreground mt-1 tracking-wide">
+              Web Designer · UI/UX · Front-End · SEO
+            </p>
             <p className="text-sm text-muted-foreground mt-2">
-              © {currentYear} Franclin Lim. All rights reserved.
+              © {currentYear} Franclin James C. Lim. All rights reserved.
             </p>
           </div>
 
@@ -49,6 +65,8 @@ export const Footer = () => {
               <a
                 key={social.label}
                 href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label={social.label}
                 className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all"
               >

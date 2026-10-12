@@ -1,17 +1,17 @@
-import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
+import { Palette, Smartphone, Lightbulb, Users } from "lucide-react";
 
 const highlights = [
   {
-    icon: Code2,
-    title: "Clean Code",
+    icon: Palette,
+    title: "UI/UX Design",
     description:
-      "Writing maintainable, scalable code that stands the test of time.",
+      "Crafting intuitive interfaces and logical navigation that put the user first.",
   },
   {
-    icon: Rocket,
-    title: "Performance",
+    icon: Smartphone,
+    title: "Responsive Layouts",
     description:
-      "Optimizing for speed and delivering lightning-fast user experiences.",
+      "Designing mobile-first experiences that perform flawlessly across every device.",
   },
   {
     icon: Users,
@@ -40,43 +40,48 @@ export const About = () => {
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
-              Building the future,
+              Designing with purpose,
               <span className="font-serif italic font-normal text-white">
                 {" "}
-                one component at a time.
+                building with precision.
               </span>
             </h2>
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I'm a passionate software engineer with over 9 years of
-                experience crafting digital products that make a difference. My
-                journey started with a curiosity for how things work on the web,
-                and it has evolved into a deep expertise in modern frontend
-                technologies.
+                I'm a Web Designer with over 9 years of experience creating
+                user-focused digital experiences for clients across medical,
+                dental, optometry, chiropractic, and veterinary industries. My
+                journey began with a curiosity for how design shapes the way
+                people interact with the web, and it has grown into a deep
+                expertise in UI/UX, responsive layout, and front-end
+                development.
               </p>
               <p>
-                I specialize in React, TypeScript, building
-                everything from sleek landing pages to complex enterprise
-                applications. My approach combines technical excellence with a
-                keen eye for design and user experience.
+                I specialize in OctoberCMS, Webflow, HTML/CSS/SCSS, PHP,
+                JavaScript, and SEO — delivering everything from full website
+                migrations to polished, client-ready interfaces. My approach
+                combines design thinking with technical execution, ensuring
+                every project is functional, accessible, and visually
+                compelling.
               </p>
               <p>
-                When I'm not coding, you'll find me capturing the world with my Sony A7III,
-                editing videos, exploring and developing my knowledge in Art, creativity, and design.
+                When I'm not designing, you'll find me capturing the world with
+                my Sony A7III, editing videos, and exploring art and creative
+                design.
               </p>
             </div>
 
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
                 "My mission is to create digital experiences that are not just
-                functional, but truly delightful — products that users love to
-                use and developers love to maintain."
+                functional, but truly delightful designs that users love to
+                use and businesses love to rely on."
               </p>
             </div>
           </div>
 
-          {/* Right Column - Hilights */}
+          {/* Right Column - Highlights */}
           <div className="grid sm:grid-cols-2 gap-6">
             {highlights.map((item, idx) => (
               <div

@@ -26,7 +26,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Location",
-    value: "Cebu City, Cebu, Philippines",
+    value: "Toledo City, Cebu, Philippines",
     href: "#",
   },
 ];
@@ -76,16 +76,17 @@ export const Contact = () => {
       });
       setFormData({ name: "", email: "", message: "" });
     } catch (err) {
-      console.error("EmailJS error:", error);
+      console.error("EmailJS error:", err);
       setSubmitStatus({
         type: "error",
         message:
-          error.text || "Failed to send message. Please try again later.",
+          err?.text || "Failed to send message. Please try again later.",
       });
     } finally {
       setIsLoading(false);
     }
   };
+
   return (
     <section id="contact" className="py-32 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full">
@@ -100,14 +101,14 @@ export const Contact = () => {
             Get In Touch
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
-            Let's build{" "}
+            Let's design{" "}
             <span className="font-serif italic font-normal text-white">
               something great.
             </span>
           </h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
-            Have a project in mind? I'd love to hear about it. Send me a message
-            and let's discuss how we can work together.
+            Have a website in mind — or need a redesign, migration, or UI/UX
+            refresh? Send me a message and let's talk about how I can help.
           </p>
         </div>
 
@@ -137,12 +138,13 @@ export const Contact = () => {
               <div>
                 <label
                   htmlFor="email"
-                  type="email"
                   className="block text-sm font-medium mb-2"
                 >
                   Email
                 </label>
                 <input
+                  id="email"
+                  type="email"
                   required
                   placeholder="your@email.com"
                   value={formData.email}
@@ -161,6 +163,7 @@ export const Contact = () => {
                   Message
                 </label>
                 <textarea
+                  id="message"
                   rows={5}
                   required
                   value={formData.message}
@@ -242,9 +245,9 @@ export const Contact = () => {
                 <span className="font-medium">Currently Available</span>
               </div>
               <p className="text-muted-foreground text-sm">
-                I'm currently open to new opportunities and exciting projects.
-                Whether you need a full-time engineer or a freelance consultant,
-                let's talk!
+                I'm currently open to new web design opportunities and
+                freelance projects. Whether you need a full website redesign,
+                a platform migration, or ongoing UI/UX support, let's talk!
               </p>
             </div>
           </div>

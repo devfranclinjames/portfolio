@@ -4,7 +4,7 @@ import { useState } from "react";
 const testimonials = [
   {
     quote:
-      "Franc is one of the most talented developers I've worked with. His attention to detail and ability to translate complex requirements into elegant solutions is remarkable.",
+      "Franc is one of the most talented designers I've worked with. His attention to detail and ability to translate complex requirements into elegant design solutions is remarkable.",
     author: "P.H.",
     role: "HenryScheineOne",
     avatar:
@@ -20,7 +20,7 @@ const testimonials = [
   },
   {
     quote:
-      "Franc's expertise in React and TypeScript helped us rebuild our entire frontend in record time. His architectural decisions continue to pay dividends.",
+      "Franc's expertise in UI/UX and responsive web design helped us refresh our entire site portfolio. His design decisions continue to pay dividends for our clients.",
     author: "L. L.",
     role: "Web Development Manager, Internet Brands",
     avatar:
